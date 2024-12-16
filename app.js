@@ -1,5 +1,5 @@
 import express from "express";
-import { pool } from "./pg/aws_pg_db.js";
+import { pool } from "./cockroach/sync.js";
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';

@@ -6,9 +6,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "neon": "node neon/neon_db.js",
+    "neon": "node neon/neon.js",
     "setup_neon": "node neon/setup.js",
     "pg": "node pg/aws_pg_db.js",
+    "setup_cockroach": "node cockroach/setup.js",
+    "sync_cockroach": "node cockroach/sync.js",
     "start": "node app.js",
     "build": "npm install"
   },
