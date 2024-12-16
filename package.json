@@ -1,10 +1,16 @@
 {
   "name": "ldr_pg_cockroachdb",
   "version": "1.0.0",
+  "type": "module",
   "description": "Logical Data Replicaton Demo - Neon Postgres to CockroachDB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "neon": "node neon/neon_db.js",
+    "setup_neon": "node neon/setup.js",
+    "pg": "node pg/aws_pg_db.js",
+    "start": "node app.js",
+    "build": "npm install"
   },
   "repository": {
     "type": "git",
